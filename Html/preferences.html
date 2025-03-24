@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Preferences - ZestyGo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/preferences.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">ZestyGo</a></h1>
+            </div>
+        </nav>
+    </header>
+
+    <div class="preferences-container">
+        <div class="preferences-form-wrapper">
+            <div class="form-progress">
+                <div class="progress-step active">
+                    <div class="step-number">1</div>
+                    <div class="step-label">Dietary Preferences</div>
+                </div>
+                <div class="progress-step">
+                    <div class="step-number">2</div>
+                    <div class="step-label">Health Concerns</div>
+                </div>
+                <div class="progress-step">
+                    <div class="step-number">3</div>
+                    <div class="step-label">Favorite Cuisines</div>
+                </div>
+            </div>
+
+            <form id="preferences-form">
+                <!-- Step 1: Dietary Preferences -->
+                <div class="form-step active" id="step-1">
+                    <h2>Dietary Preferences</h2>
+                    <p>Tell us about your dietary preferences to help us recommend the best food options for you.</p>
+                    
+                    <div class="form-group checkbox-group">
+                        <h3>Do you follow any of these diets?</h3>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="vegetarian" name="diet" value="vegetarian">
+                            <label for="vegetarian">Vegetarian</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="vegan" name="diet" value="vegan">
+                            <label for="vegan">Vegan</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="pescatarian" name="diet" value="pescatarian">
+                            <label for="pescatarian">Pescatarian</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="keto" name="diet" value="keto">
+                            <label for="keto">Keto</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="paleo" name="diet" value="paleo">
+                            <label for="paleo">Paleo</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="none" name="diet" value="none">
+                            <label for="none">No specific diet</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <button type="button" class="btn btn-primary next-btn">Next</button>
+                    </div>
+                </div>
+                
+                <!-- Step 2: Health Concerns -->
+                <div class="form-step" id="step-2">
+                    <h2>Health Concerns</h2>
+                    <p>Do you have any allergies or health concerns we should know about?</p>
+                    
+                    <div class="form-group checkbox-group">
+                        <h3>Select any allergies or intolerances:</h3>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="gluten" name="allergies" value="gluten">
+                            <label for="gluten">Gluten</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="dairy" name="allergies" value="dairy">
+                            <label for="dairy">Dairy</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="nuts" name="allergies" value="nuts">
+                            <label for="nuts">Nuts</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="shellfish" name="allergies" value="shellfish">
+                            <label for="shellfish">Shellfish</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="soy" name="allergies" value="soy">
+                            <label for="soy">Soy</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <h3>Other health concerns:</h3>
+                        <textarea id="health-concerns" name="health-concerns" rows="3" placeholder="e.g., Low sodium diet, diabetes management, high protein needs, etc."></textarea>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <button type="button" class="btn btn-secondary prev-btn">Previous</button>
+                        <button type="button" class="btn btn-primary next-btn">Next</button>
+                    </div>
+                </div>
+                
+                <!-- Step 3: Favorite Cuisines -->
+                <div class="form-step" id="step-3">
+                    <h2>Favorite Cuisines</h2>
+                    <p>Select cuisines you enjoy to help us personalize your recommendations.</p>
+                    
+                    <div class="form-group cuisine-selection">
+                        <div class="cuisine-item">
+                            <input type="checkbox" id="italian" name="cuisine" value="italian">
+                            <label for="italian">
+                                <div class="cuisine-icon">🍝</div>
+                                <div class="cuisine-name">Italian</div>
+                            </label>
+                        </div>
+                        <div class="cuisine-item">
+                            <input type="checkbox" id="mexican" name="cuisine" value="mexican">
+                            <label for="mexican">
+                                <div class="cuisine-icon">🌮</div>
+                                <div class="cuisine-name">Mexican</div>
+                            </label>
+                        </div>
+                        <div class="cuisine-item">
+                            <input type="checkbox" id="indian" name="cuisine" value="indian">
+                            <label for="indian">
+                                <div class="cuisine-icon">🍛</div>
+                                <div class="cuisine-name">Indian</div>
+                            </label>
+                        </div>
+                        <div class="cuisine-item">
+                            <input type="checkbox" id="chinese" name="cuisine" value="chinese">
+                            <label for="chinese">
+                                <div class="cuisine-icon">🥡</div>
+                                <div class="cuisine-name">Chinese</div>
+                            </label>
+                        </div>
+                        <div class="cuisine-item">
+                            <input type="checkbox" id="japanese" name="cuisine" value="japanese">
+                            <label for="japanese">
+                                <div class="cuisine-icon">🍣</div>
+                                <div class="cuisine-name">Japanese</div>
+                            </label>
+                        </div>
+                        <div class="cuisine-item">
+                            <input type="checkbox" id="thai" name="cuisine" value="thai">
+                            <label for="thai">
+                                <div class="cuisine-icon">🍜</div>
+                                <div class="cuisine-name">Thai</div>
+                            </label>
+                        </div>
+                        <div class="cuisine-item">
+                            <input type="checkbox" id="mediterranean" name="cuisine" value="mediterranean">
+                            <label for="mediterranean">
+                                <div class="cuisine-icon">🥙</div>
+                                <div class="cuisine-name">Mediterranean</div>
+                            </label>
+                        </div>
+                        <div class="cuisine-item">
+                            <input type="checkbox" id="american" name="cuisine" value="american">
+                            <label for="american">
+                                <div class="cuisine-icon">🍔</div>
+                                <div class="cuisine-name">American</div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <button type="button" class="btn btn-secondary prev-btn">Previous</button>
+                        <button type="submit" class="btn btn-primary">Complete Profile</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ZestyGo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/preferences.js"></script>
+</body>
+</html>

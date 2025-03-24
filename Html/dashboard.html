@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ZestyGo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">ZestyGo</a></h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="#restaurants">Restaurants</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                </ul>
+            </div>
+            <div class="user-menu">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for food or restaurants...">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <div class="dropdown">
+                    <button class="user-profile-btn">
+                        <span id="user-initial">U</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#profile">Profile</a>
+                        <a href="#preferences">Preferences</a>
+                        <a href="#orders">My Orders</a>
+                        <a href="#" id="logout-btn">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="welcome-banner">
+            <div class="welcome-text">
+                <h2>Welcome back, <span id="user-name">User</span>!</h2>
+                <p>Here are your personalized food recommendations based on your preferences.</p>
+            </div>
+        </div>
+
+        <section class="dashboard-section">
+            <div class="section-header">
+                <h2>Recommended For You</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="food-recommendations" id="recommended-items">
+                <!-- Will be populated with JS -->
+            </div>
+        </section>
+
+        <section class="dashboard-section">
+            <div class="section-header">
+                <h2>Nearby Restaurants</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="restaurant-recommendations" id="restaurant-recommendations">
+                <!-- Will be populated with JS -->
+            </div>
+        </section>
+
+        <section class="dashboard-section">
+            <div class="section-header">
+                <h2>Cook at Home</h2>
+                <a href="#" class="view-all">View All Recipes</a>
+            </div>
+            <div class="recipe-recommendations" id="recipe-recommendations">
+                <!-- Will be populated with JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>ZestyGo</h2>
+                <p>Find your perfect meal, every time</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest food recommendations</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit" class="btn btn-secondary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ZestyGo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

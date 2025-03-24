@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ZestyGo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">ZestyGo</a></h1>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-login">Login</a>
+                <a href="signup.html" class="btn btn-signup">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="auth-container">
+        <div class="auth-form-container">
+            <h2>Welcome Back!</h2>
+            <p>Login to access your personalized food recommendations</p>
+            
+            <form id="login-form" class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+            
+            <div class="auth-separator">
+                <span>OR</span>
+            </div>
+            
+            <button class="btn btn-google btn-block">
+                <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt="Google" width="20">
+                Continue with Google
+            </button>
+            
+            <p class="auth-redirect">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ZestyGo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>
